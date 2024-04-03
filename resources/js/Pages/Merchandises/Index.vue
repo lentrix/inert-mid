@@ -37,7 +37,12 @@ const props = defineProps({
                         <td class="py-2">{{ merch.name }}</td>
                         <td class="py-2 text-right">{{ merch.wholesale_price }}</td>
                         <td class="py-2 text-right">{{ merch.retail_price }}</td>
-                        <td class="text-center">...</td>
+                        <td class="text-center">
+                            <div class="flex gap-2 justify-center">
+                                <button class="bg-blue-700 px-2 rounded hover:bg-blue-500 text-white">E</button>
+                                <button class="bg-red-700 px-2 rounded hover:bg-red-500 text-white">X</button>
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>
