@@ -1,10 +1,10 @@
 <script setup>
-import { Head, Link } from '@inertiajs/vue3';
+import { Head } from '@inertiajs/vue3';
+import Header from '@/Components/Header.vue'
 
 </script>
 
 <template>
-    <Head title="Welcome" />
-
-    <p>Starting point...</p>
+    <Head title="Home" />
+    <Header />
 </template>
