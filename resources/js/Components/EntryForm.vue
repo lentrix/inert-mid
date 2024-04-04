@@ -32,11 +32,11 @@ const submit = () => {
             </div>
             <div class="flex flex-col my-3">
                 <label for="description">Description</label>
-                <textarea rows="4" id="description" class="w-full rounded"></textarea>
+                <textarea rows="4" id="description" class="w-full rounded" v-model="form.description"></textarea>
             </div>
             <div class="flex flex-col my-3">
                 <label for="category_id">Category</label>
-                <select id="category_id" v-model="form.description" class="w-full rounded">
+                <select id="category_id" v-model="form.category_id" class="w-full rounded">
                     <option value="0">Select category</option>
                     <option v-for="(categ, index) in categories" :key="categ.id" :value="categ.id">
                         {{ categ.name }}
